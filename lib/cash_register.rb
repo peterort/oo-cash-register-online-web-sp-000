@@ -12,7 +12,6 @@ class CashRegister
     @price = price
     @quantity = quantity
     @total += @price * @quantity
-    @last_transaction << @price
     if quantity > 1
       counter = 0
       while counter < quantity
@@ -39,7 +38,7 @@ class CashRegister
   end
 
 def void_last_transaction
-  @last = @last_transaction
+  @last = @last_transaction.pop
   @total - @last
 
 end
