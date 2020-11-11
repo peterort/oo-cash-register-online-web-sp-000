@@ -11,7 +11,8 @@ class CashRegister
     @title = title
     @price = price
     @quantity = quantity
-    @total = @price * @quantity
+    @currenttotal = @price * @quantity
+    @total = @total + @currenttotal
 
 
   end
