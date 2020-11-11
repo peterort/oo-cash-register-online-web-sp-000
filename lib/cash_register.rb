@@ -20,6 +20,8 @@ class CashRegister
     @discount_price = (@total * @discount)/ 100
     @total -= @discount_price
     puts "After the discount, the total comes to #{@total}."
+  else
+    puts "no discount for you"
   end
   end
 end
