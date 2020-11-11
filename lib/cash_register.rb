@@ -21,4 +21,5 @@ class CashRegister
     @total -= @discount_price
     puts "After the discount, the total comes to #{@total}."
   end
+  end
 end
