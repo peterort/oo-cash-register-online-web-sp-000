@@ -13,7 +13,6 @@ class CashRegister
     @grandtotal = quantity * price
     @price = @grandtotal
 
-  end
 
   end
 end
